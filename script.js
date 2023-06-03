@@ -200,7 +200,7 @@
 //   removePotion(potionName) {
 //      for (const potion of this.potions){
 //        if( potion.name === potionName){
-//          const potionIndex = this.potions.indexOf(potion); 
+//          const potionIndex = this.potions.indexOf(potion);
 //          this.potions.splice(potionIndex, 1);
 //        }
 //      }
@@ -225,3 +225,100 @@
 //   // Change code above this line
 // };
 // atTheOldToad.updatePotionName('Stone skin', 'Invulnerability potion');
+
+
+// function deliverPizza(pizzaName) {
+//   return `Delivering ${pizzaName} pizza.`;
+// }
+
+// function makePizza(pizzaName) {
+//   return `Pizza ${pizzaName} is being prepared, please wait...`;
+// }
+
+// // Chande code below this line
+// function makeMessage(pizzaName, callback) {
+//     return callback(pizzaName);
+//     // console.log(callback(pizzaName))
+// }
+// makeMessage('Royal Grand', makePizza);
+
+// function changeEven(numbers, value) {
+//   // Change code below this line
+//     let newNumbers = [];
+  
+// numbers.forEach(num => {
+  
+//   if(num % 2 === 0){
+//   newNumbers.push(num + value);
+//     // return newNumbers;
+//     }
+//   else if (num % 2 !== 0) {
+//      newNumbers.push(num);
+//     }
+  
+   
+// });
+//     console.log(newNumbers);
+//     // return newNumbers;
+//   // for (let i = 0; i < numbers.length; i += 1) {
+//   //   if (numbers[i] % 2 === 0) {
+//   //     numbers[i] = numbers[i] + value;
+//   //   }
+//   // }
+//   // Change code above this line
+// }
+// changeEven([44, 13, 81, 92, 36, 54], 100);
+
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// // Change code below this line
+
+// const totalPlayTime = playtimes.reduce((playtime, number) => playtime + number, -1000);
+// console.log(totalPlayTime);
+
+
+// const players = [
+//   { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+//   { name: "Poly", playtime: 469, gamesPlayed: 2 },
+//   { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+//   { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+// ];
+// // Change code below this line
+// const totalAveragePlaytimePerGame = players.reduce((total, player) => total + (player.playtime / player.gamesPlayed), 0);
+// console.log(totalAveragePlaytimePerGame);
+
+
+
+const books = [
+  {
+    title: "The Last Kingdom",
+    author: "Bernard Cornwell",
+    rating: 8.38,
+  },
+  {
+    title: "Beside Still Waters",
+    author: "Robert Sheckley",
+    rating: 8.51,
+  },
+  {
+    title: "The Dream of a Ridiculous Man",
+    author: "Fyodor Dostoevsky",
+    rating: 7.75,
+  },
+  { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+  {
+    title: "The Dreams in the Witch House",
+    author: "Howard Lovecraft",
+    rating: 8.67,
+  },
+];
+const MIN_BOOK_RATING = 8;
+// Change code below this line
+
+const names = books.filter(book => book.rating > MIN_BOOK_RATING).map(book => book.author).sort((a, b) => a.localeCompare(b));
+console.log(names);
