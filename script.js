@@ -322,3 +322,4 @@
 
 // const names = books.filter(book => book.rating > MIN_BOOK_RATING).map(book => book.author).sort((a, b) => a.localeCompare(b));
 // console.log(names);
+
